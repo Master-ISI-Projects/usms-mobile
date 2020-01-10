@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableRow android:background="#DAE8FC" android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/oleoscriptregular"
+                    android:text="Accronyme" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/oleoscriptregular"
+                    android:text="Intitulé" />
+            </TableRow>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/whiteColor"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="DEF" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Défailant" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="CONV" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="Convoque" />
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="AV" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Acquis par Equivalence" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="AR" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Appelé au Rattrapage" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="AJAC" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Ajourné Autorisé à continuer" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="AJ" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Ajourné" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="ADMR" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Admis aprés Rattrapage" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="ADMI" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Admissible" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="ADMC" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Admis avec Crédit" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="ADM" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Admis" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="ABI" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Absence injustifiée" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="NV" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Non validé" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="V" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Validé" />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyColor"/>
+            <TableRow android:background="@color/whiteColor" android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:layout_weight="1"
+                    android:text="VPC" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/opensansregularnormal"
+                    android:text="Validé par compensation" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">FPBM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_accueil">Accueil</string>
+    <string name="menu_news">Actualités</string>
+    <string name="menu_events">Evénements FPBM</string>
+    <string name="menu_university_infos">FPBM en bref!</string>
+    <string name="menu_Presedent_word">Mot du président</string>
+    <string name="FPBM">Faculté Polydisciplinaire Beni Mellal</string>
+    <string name="fpbm_web">Web</string>
+    <string name="fpbm_face">FPBM Facebook</string>
+    <string name="authentification">Authentification</string>
+
+    <string name="menu_student_home">Accueil</string>
+    <string name="menu_student_result">Résultats</string>
+    <string name="menu_student_notif">Notifications</string>
+    <string name="menu_student_table">Tableau Affichages</string>
+    <string name="menu_student_disco">Se déconnecter</string>
+    <string name="menu_student_accro">Accronyme</string>
+
+
+    <string name="about">
+        <![CDATA[
+        Un \établissement universitaire de l\'Universit\é Sultan Moulay Slimane ouvert \à partir de l\'ann\ée universitaire 2003-2004 pour am\éliorer l\'offre de formation de l\'universit\é et r\épondre aux attentes de son environnement socio\économique r\égional et national. C\'est un \établissement \à acc\ès ouvert qui a pour mission de dispenser l\'enseignement sup\érieur en formation initiale et en formation continue dans les champs disciplinaires des:<br />
+- Lettres, sciences humaines et arts;<br />
+- Math\ématiques, informatique, physique, chimie, sciences de la vie, de la terre et de l\'univers;<br />
+- Sciences juridiques, \économiques, sociales et de gestion.<br />
+Il a vocation \à pr\éparer et d\élivrer les diplômes nationaux de la Licence d\'Etudes Fondamentales (LEF) et la Licence Professionnelle (LP).
+    ]]>
+    </string>
+
+    <string name="pw_word_text">
+        <![CDATA[
+        Diriger cette jeune universit\u00E9 est un r\u00E9el plaisir et un d\u00E9fi pour moi. C\u2019est avec enthousiasme et optimisme que j\u2019amorce mon premier mandat \u00E0 titre de Pr\u00E9sident de l\u2019Universit\u00E9 Sultan Moulay Slimane. Ouverte sur son environnement, autant sur le plan national qu\u2019international, l\u2019USMS est une grande universit\u00E9 d\u2019enseignement et de recherche, comptant aujourd\u2019hui sept \u00E9tablissements avec des implantations dans les villes de Beni Mellal, Khouribga et Khenifra. Elle met \u00E0 la disposition du public r\u00E9gional et national une large gamme de formations fondamentales et professionnelles.<br />Dans l\u2019accomplissement de ses t\u00E2ches, l\u2019Universit\u00E9 Sultan Moulay Slimane remplit sa mission de contribuer au d\u00E9veloppement de l\u2019\u00E9conomie et de la r\u00E9gion qui, face \u00E0 la mondialisation progressive, doit relever de nouveaux d\u00E9fis. Or, la formation dont l\u2019importance strat\u00E9gique est l\u2019un des d\u00E9fis majeurs et in\u00E9vitables dans un contexte mondialis\u00E9 fortement comp\u00E9titif, nous oblige \u00E0 assurer sa qualit\u00E9 indiscutable en repensant sa nature, son contenu, ses vis\u00E9es, sa pertinence, sa transf\u00E9rabilit\u00E9 et son efficacit\u00E9. Notre objectif est de repenser l\u2019offre de formation, d\u2019explorer l\u2019id\u00E9e d\u2019un enseignement conscient, o\u00F9 l\u2019universit\u00E9 met en place des formations adapt\u00E9es aux d\u00E9fis de notre soci\u00E9t\u00E9, de stimuler l\u2019esprit entrepreneurial et de fournir les outils \u00E0 nos enseignants chercheurs et \u00E0 nos \u00E9tudiants pour remettre en question nos m\u00E9thodes d\u2019enseignement afin de les adapter \u00E0 une nouvelle \u00E8re de transmission du savoir.<br />Avec l\u2019enseignement, La recherche scientifique fait partie int\u00E9grante des missions principales de l\u2019universit\u00E9. Une jeune universit\u00E9 comme la n\u00F4tre doit penser \u00E0 initier ses \u00E9tudiants \u00E0 la recherche scientifique beaucoup plus t\u00F4t dans leur parcours.L\u2019USMS promeut d\u2019offrir aux \u00E9tudiants chercheurs plusieurs opportunit\u00E9s, tant sur le plan national qu\u2019international, en nouant des partenariats porteurs incitant \u00E0 la mobilit\u00E9, \u00E0 l\u2019organisation de rencontres scientifiques internationales, \u00E0 l\u2019aide au montage de projets internationaux et \u00E0 la multiplication des th\u00E8ses en cotutelle ou l\u2019accueil de coll\u00E8gues ou de doctorant venus de tous les continents.<br />Au cours des prochaines ann\u00E9es, nos \u00E9tudiants auront beaucoup d\u2019options. Non seulement nous nous contenterons d\u2019\u00EAtre un lieu de formation, mais nous promouvons \u00E9galement des activit\u00E9s de renforcement de la communaut\u00E9 allant au-del\u00E0 de la vie quotidienne de l\u2019universit\u00E9. Notre objectif est de continuer \u00E0 am\u00E9liorer nos infrastructures et \u00E0 faire de notre campus un milieu de vie o\u00F9 il fait bon \u00E9tudier, enseigner, innover, cr\u00E9er. Un milieu qui, sans nul doute, suscite la fiert\u00E9 de la communaut\u00E9 et encourage le d\u00E9veloppement d\u2019un fort sentiment d\u2019appartenance.<br />Apr\u00E8s tout, Je ne peux qu\u2019\u00EAtre fier de diriger cette grande universit\u00E9 et de pouvoir compter sur la collaboration de ses dirigeants, enseignants-chercheurs, et membres du personnel administratif et techniques qui, tous ensemble, forment une g\u00E9n\u00E9ration exceptionnelle et innovante.
+        ]]>
+    </string>
+    <string name="title_activity_student_auth">StudentAuthActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

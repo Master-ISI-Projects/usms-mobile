@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#046dab</color>
+    <color name="colorPrimaryDark">#05517e</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="FPBMColor">#1682c2</color>
+    <color name="cardsBodyColor">#949494</color>
+    <color name="blackColor">#000000</color>
+    <color name="cardsVectors">#39b2f9</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="greyColor">#C0C0C0</color>
+</resources>

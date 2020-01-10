@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_accueil" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/news"
+            android:title="@string/menu_news" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/u_infos"
+            android:title="@string/menu_university_infos" />
+        <item
+            android:id="@+id/nav_pw"
+            android:icon="@drawable/word"
+            android:title="@string/menu_Presedent_word" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/event"
+            android:title="@string/menu_events" />
+    </group>
+
+    <item android:title="communiquer">
+        <menu>
+            <item
+                android:id="@+id/nav_web"
+                android:icon="@drawable/web"
+                android:onClick="ReachUsWeb"
+                android:title="@string/fpbm_web" />
+            <item
+                android:id="@+id/nav_fb"
+                android:icon="@drawable/facebook"
+                android:onClick="ReachUsFacebook"
+                android:title="@string/fpbm_face" />
+        </menu>
+    </item>
+    <item android:title="Authentication">
+        <menu>
+            <item
+                android:id="@+id/nav_Auth"
+                android:icon="@drawable/auth"
+                android:title="@string/authentification" />
+        </menu>
+    </item>
+
+</menu>

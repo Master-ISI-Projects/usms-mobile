@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.USMS.Mobile">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Student_Accronyme_Activity"></activity>
+        <activity android:name=".Student_table_Activity" />
+        <activity android:name=".Student_notification_Activity" />
+        <activity android:name=".Student_result_Activity" />
+        <activity
+            android:name=".StudentAuthActivity"
+            android:label="@string/title_activity_student_auth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EventsActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".PwActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

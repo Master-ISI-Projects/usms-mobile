@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_lines"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/backimage"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:inputType="datetime"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/opensansregularnormal"
+        android:textSize="16dp"
+        android:hint="Code Nationale d'étudiant"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_login"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/opensansregularnormal"
+        android:textSize="16dp"
+        android:hint="Apogée"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_login"
+        />
+
+    <TextView
+        android:id="@+id/Auth_Date_edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/opensansregularnormal"
+        android:textSize="16dp"
+        android:hint="Année/Mois/Jours"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_login"
+        android:layout_marginBottom="12dp"
+        />
+
+    <Button
+        android:id="@+id/button_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_login"
+        android:capitalize="none"
+        android:fontFamily="@font/opensansregularnormal"
+        android:text="Se connecter"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textSize="16dp" />
+</LinearLayout>

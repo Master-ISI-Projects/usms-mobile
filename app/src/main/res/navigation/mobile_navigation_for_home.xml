@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.USMS.Mobile.ui.HomeFragment"
+        android:label="@string/menu_accueil"
+        tools:layout="@layout/fragment_accueil" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.USMS.Mobile.ui.NewsFragment"
+        android:label="@string/menu_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.USMS.Mobile.ui.AboutFragment"
+        android:label="@string/menu_university_infos"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_pw"
+        android:name="com.USMS.Mobile.ui.PwFragment"
+        android:label="@string/menu_Presedent_word"
+        tools:layout="@layout/fragment_pw" />
+    <fragment
+        android:id="@+id/nav_event"
+        android:name="com.USMS.Mobile.ui.EventFragment"
+        android:label="@string/menu_events"
+        tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/nav_Auth"
+        android:name="com.USMS.Mobile.ui.AuthFragment"
+        android:label="@string/authentification"
+        tools:layout="@layout/fragment_auth" />
+
+</navigation>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_lines"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/whiteColor"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/on_student_result_click"
+
+            >
+            <LinearLayout
+                android:id="@+id/rlimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/result_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Résultats"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/whiteColor"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/on_student_table_click"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="16dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/table_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tableau Affichages"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/whiteColor"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/on_student_notif_click"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/notif_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/whiteColor"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/on_student_accro_click"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="16dp"
+                android:orientation="vertical"
+
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/accro_icon_student_home" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_student_accro"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_student_home"
+            android:icon="@drawable/ic_student_home"
+            android:title="@string/menu_student_home" />
+        <item
+            android:id="@+id/nav_student_result"
+            android:icon="@drawable/ic_student_result"
+            android:title="@string/menu_student_result" />
+        <item
+            android:id="@+id/nav_student_notif"
+            android:icon="@drawable/ic_student_notifications"
+            android:title="@string/menu_student_notif" />
+        <item
+            android:id="@+id/nav_student_table"
+            android:icon="@drawable/ic_student_table"
+            android:title="@string/menu_student_table" />
+        <item
+            android:id="@+id/nav_student_acro"
+            android:icon="@drawable/ic_student_acro"
+            android:title="@string/menu_student_accro" />
+        <item
+            android:id="@+id/nav_student_disco"
+            android:icon="@drawable/ic_student_out"
+            android:title="@string/menu_student_disco" />
+    </group>
+
+</menu>
