@@ -12,12 +12,24 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.USMS.Mobile.R;
+import com.USMS.Mobile.models.NotificationItem;
+import com.USMS.Mobile.models.NotificationItemAdapter;
+import com.USMS.Mobile.models.ResultItem;
+import com.USMS.Mobile.models.ResultItemAdapter;
 
 import java.util.ArrayList;
 
 public class StudentResultFragment extends Fragment {
+
+    RecyclerView recyclerView;
+    RecyclerView.Adapter myAdapter;
+    RecyclerView.LayoutManager layoutManager;
+    ArrayList<ResultItem> itemList;
+
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_student_result, null);
     }
@@ -26,69 +38,21 @@ public class StudentResultFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final TableLayout table = (TableLayout) view.findViewById(R.id.table);
+        recyclerView = view.findViewById(R.id.result_list);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(layoutManager);
 
-        class Person{
-            String name;
-            String mail;
-            int age;
-
-            public Person(String name, String mail, int age) {
-                this.name = name;
-                this.mail = mail;
-                this.age = age;
-            }
-
-            public String getName() {
-                return name;
-            }
-
-            public void setName(String name) {
-                this.name = name;
-            }
-
-            public String getMail() {
-                return mail;
-            }
-
-            public void setMail(String mail) {
-                this.mail = mail;
-            }
-
-            public int getAge() {
-                return age;
-            }
-
-            public void setAge(int age) {
-                this.age = age;
-            }
-        }
+        itemList = new ArrayList<ResultItem>();
+        itemList.add(new ResultItem("Module 1", "att 1", "attTwo 1"));
+        itemList.add(new ResultItem("Module 2", "att 2", "attTwo 2"));
+        itemList.add(new ResultItem("Module 3", "att 3", "attTwo 3"));
+        itemList.add(new ResultItem("Module 4", "att 4", "attTwo 4"));
 
 
-        ArrayList<Person> persons = new ArrayList<>();
-        persons.add(new Person("name 1", "mail 1", 20));
-        persons.add(new Person("name 2", "mail 2", 10));
-        persons.add(new Person("name 3", "mail 3", 30));
+        myAdapter = new ResultItemAdapter(getActivity(), itemList);
+        recyclerView.setAdapter(myAdapter);
 
-        for(Person person : persons) {
-            TableRow row = new TableRow(getActivity());
-            TextView tvName = new TextView(getActivity());
-            TextView tvAge = new TextView(getActivity());
-            TextView tvMail = new TextView(getActivity());
-            tvName.setText(person.getName());
-            tvAge.setText(String.valueOf(person.getAge()));
-            tvMail.setText(person.getMail());
-            tvName.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, TableLayout.LayoutParams.WRAP_CONTENT));
-            row.addView(tvName);
-            row.addView(tvAge);
-            row.addView(tvMail);
-            table.addView(row);
-        }
-
-        /*
-        *
-        *
-        * */
 
     }
 }
