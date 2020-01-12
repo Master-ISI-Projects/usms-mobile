@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.USMS.Mobile.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -43,7 +44,7 @@ public class EventItemAdapter   extends RecyclerView.Adapter<EventItemAdapter.Vi
                     int a =  events.indexOf((EventItem) v.getTag());
                     String b = a + "e";
                     Log.i("ok", b);
-                    Toast.makeText(itemView.getContext(), events.get(a).getName(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(itemView.getContext(), events.get(a).getTitle(), Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -60,9 +61,10 @@ public class EventItemAdapter   extends RecyclerView.Adapter<EventItemAdapter.Vi
     public void onBindViewHolder(@NonNull EventItemAdapter.ViewHolder Viewholder, int i) {
 
         Viewholder.itemView.setTag(events.get(i));
-        Viewholder.events_name.setText(events.get(i).getName());
-        Viewholder.events_date.setText(events.get(i).getDate());
+        Viewholder.events_name.setText(events.get(i).getTitle());
+        Viewholder.events_date.setText(events.get(i).getStart_at());
         Viewholder.events_image.setImageResource(R.drawable.news_item);
+        Picasso.get().load(events.get(i).getImage()).into(Viewholder.events_image);
 
     }
 
