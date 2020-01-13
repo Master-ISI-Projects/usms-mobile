@@ -28,6 +28,7 @@
         android:hint="Code Nationale d'étudiant"
         android:padding="10dp"
         android:background="@drawable/edit_text_login"
+        android:id="@+id/eTNationale_login"
         />
 
     <EditText
@@ -40,6 +41,7 @@
         android:fontFamily="@font/opensansregularnormal"
         android:textSize="16dp"
         android:hint="Apogée"
+        android:id="@+id/eTApoge_login"
         android:padding="10dp"
         android:background="@drawable/edit_text_login"
         />

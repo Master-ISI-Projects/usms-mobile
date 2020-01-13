@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewsDetailsActivity"></activity>
+        <activity android:name=".EventsDetailsActivity"></activity>
+        <activity android:name=".NewsDetailsActivity" />
         <activity android:name=".Student_Accronyme_Activity" />
         <activity android:name=".Student_table_Activity" />
         <activity android:name=".Student_notification_Activity" />

@@ -35,8 +35,10 @@ public class NewsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle(R.string.menu_news);
+
         setContentView(R.layout.activity_news);
+
+        setTitle(R.string.menu_news);
 
         recyclerView = findViewById(R.id.news_list);
         recyclerView.setHasFixedSize(true);
@@ -45,7 +47,7 @@ public class NewsActivity extends AppCompatActivity {
 
 
         final Gson gson = new Gson();
-        String url ="http://192.168.43.239:8000/api/news";
+        String url ="http://192.168.137.237:8000/api/news";
 
 
         // Instantiate the RequestQueue.

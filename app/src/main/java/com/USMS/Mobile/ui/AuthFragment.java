@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,7 +32,12 @@ public class AuthFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
         final TextView dateET = view.findViewById(R.id.Auth_Date_edit_Text);
+        final EditText eTNationaleCode, eTApoge;
+
+        eTNationaleCode = view.findViewById(R.id.eTNationale_login);
+        eTApoge  = view.findViewById(R.id.eTApoge_login);
 
 
         dateET.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +48,7 @@ public class AuthFragment extends Fragment {
                 int day = c.get(Calendar.DAY_OF_MONTH);
                 int month = c.get(Calendar.MONTH);
                 int year = c.get(Calendar.YEAR);
+
 
                 DatePickerDialog.OnDateSetListener setListener = new DatePickerDialog.OnDateSetListener() {
                     @Override
@@ -69,8 +76,18 @@ public class AuthFragment extends Fragment {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), com.USMS.Mobile.StudentAuthActivity.class);
-                startActivity(i);
+                String NationaleCode = eTNationaleCode.getText().toString().trim();
+                String ApogeCode = eTApoge.getText().toString().trim();
+                String BirthDate = dateET.getText().toString().trim();
+
+
+                if (NationaleCode.isEmpty() || ApogeCode.isEmpty() || BirthDate.isEmpty())
+                {
+                    Toast.makeText(getActivity(), "veuillez remplir tous les champs", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    
+                }
             }
         });
 

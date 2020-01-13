@@ -44,7 +44,7 @@ public class EventsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         final Gson gson = new Gson();
-        String url ="http://192.168.43.239:8000/api/events";
+        String url ="http://192.168.137.237:8000/api/events";
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);

@@ -51,7 +51,7 @@ public class NewsFragment extends Fragment{
 
 
         final Gson gson = new Gson();
-        String url ="http://192.168.43.239:8000/api/news";
+        String url ="http://192.168.137.237:8000/api/news";
 
 
         // Instantiate the RequestQueue.

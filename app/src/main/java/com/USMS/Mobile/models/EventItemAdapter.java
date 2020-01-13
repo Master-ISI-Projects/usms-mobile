@@ -1,6 +1,7 @@
 package com.USMS.Mobile.models;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +43,14 @@ public class EventItemAdapter   extends RecyclerView.Adapter<EventItemAdapter.Vi
                 @Override
                 public void onClick(View v) {
                     int a =  events.indexOf((EventItem) v.getTag());
-                    String b = a + "e";
-                    Log.i("ok", b);
-                    Toast.makeText(itemView.getContext(), events.get(a).getTitle(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(itemView.getContext(), com.USMS.Mobile.EventsDetailsActivity.class);
+                    intent.putExtra("title", events.get(a).getTitle());
+                    intent.putExtra("image", events.get(a).getImage());
+                    intent.putExtra("description", events.get(a).getDescription());
+                    intent.putExtra("start_at", events.get(a).getStart_at());
+                    intent.putExtra("duration", events.get(a).getDuration());
+                    intent.putExtra("scholar_year_id", events.get(a).getScholar_year_id());
+                    itemView.getContext().startActivity(intent);
                 }
             });
         }

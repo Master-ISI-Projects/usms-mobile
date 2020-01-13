@@ -17,8 +17,8 @@
             android:orientation="vertical">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/news_image"
+                android:layout_height="match_parent"
+                android:id="@+id/event_image"
                 />
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                         android:textStyle="bold"
                         android:layout_margin="10dp"
                         android:textSize="18dp"
-                        android:id="@+id/news_description"
+                        android:id="@+id/event_description"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -46,7 +46,16 @@
                         android:textStyle="bold"
                         android:layout_margin="10dp"
                         android:textSize="18dp"
-                        android:id="@+id/news_published_at"
+                        android:id="@+id/event_start_at"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensansregularnormal"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textSize="18dp"
+                        android:id="@+id/event_duration"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -55,7 +64,7 @@
                         android:textSize="18dp"
                         android:layout_margin="10dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/news_scholar_year_id"
+                        android:id="@+id/event_scholar_year_id"
                         />
                 </LinearLayout>
 
