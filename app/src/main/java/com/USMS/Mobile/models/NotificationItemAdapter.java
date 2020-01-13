@@ -24,12 +24,13 @@ public class NotificationItemAdapter extends RecyclerView.Adapter<NotificationIt
     }
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView notifcation_title, notification_content;
+        TextView notifcation_title, notification_content, notification_date;
 
         public ViewHolder(@NonNull final View itemView) {
             super(itemView);
             notifcation_title = itemView.findViewById(R.id.notification_title);
             notification_content = itemView.findViewById(R.id.notification_content);
+            notification_date = itemView.findViewById(R.id.notification_date);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -57,6 +58,7 @@ public class NotificationItemAdapter extends RecyclerView.Adapter<NotificationIt
         Viewholder.itemView.setTag(notifications.get(i));
         Viewholder.notifcation_title.setText(notifications.get(i).getTitle());
         Viewholder.notification_content.setText(notifications.get(i).getContent());
+        Viewholder.notification_date.setText(notifications.get(i).getDate());
 
     }
 
