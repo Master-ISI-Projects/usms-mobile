@@ -11,7 +11,12 @@
         android:layout_marginTop="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp" >
-        <TableRow android:background="@drawable/edit_text_login" android:backgroundTint="@color/greyColor" android:padding="15dp">
+        <TableRow
+            android:background="@drawable/edit_text_login"
+            android:backgroundTint="@color/greyColor"
+            android:padding="15dp"
+            android:id="@+id/onClickEmploiTemps"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -22,7 +27,11 @@
                 android:text="Emploi du temps" />
 
         </TableRow>
-        <TableRow android:background="@color/whiteColor" android:padding="15dp">
+        <TableRow
+            android:background="@color/whiteColor"
+            android:padding="15dp"
+            android:id="@+id/onClickEmploiControle"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -36,7 +45,11 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/greyColor"/>
-        <TableRow android:background="@color/whiteColor" android:padding="15dp">
+        <TableRow
+            android:background="@color/whiteColor"
+            android:padding="15dp"
+            android:id="@+id/onClickEmploiExams"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
