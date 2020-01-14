@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.USMS.Mobile.Helpers.Constant;
 import com.USMS.Mobile.models.NewsItem;
 import com.USMS.Mobile.models.NewsItemAdapter;
 import com.USMS.Mobile.ui.NewsFragment;
@@ -47,7 +48,7 @@ public class NewsActivity extends AppCompatActivity {
 
 
         final Gson gson = new Gson();
-        String url ="http://192.168.137.237:8000/api/news";
+        String url = Constant.API_URL + "/news";
 
 
         // Instantiate the RequestQueue.

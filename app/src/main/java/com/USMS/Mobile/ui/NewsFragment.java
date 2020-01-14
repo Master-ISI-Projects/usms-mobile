@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.USMS.Mobile.Helpers.Constant;
 import com.USMS.Mobile.R;
 import com.USMS.Mobile.models.NewsItem;
 import com.USMS.Mobile.models.NewsItemAdapter;
@@ -51,7 +52,7 @@ public class NewsFragment extends Fragment{
 
 
         final Gson gson = new Gson();
-        String url ="http://192.168.137.237:8000/api/news";
+        String url = Constant.API_URL + "/news";
 
 
         // Instantiate the RequestQueue.

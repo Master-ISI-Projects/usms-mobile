@@ -30,19 +30,26 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/result_title"
+                    android:id="@+id/result_semester"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="TextView"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/greyColor"/>
 
                 <TextView
                     android:id="@+id/result_attOne"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
+
                 <TextView
                     android:id="@+id/result_attTwo"
                     android:layout_width="match_parent"

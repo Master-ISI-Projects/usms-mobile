@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.USMS.Mobile.Helpers.Constant;
 import com.USMS.Mobile.models.EventItem;
 import com.USMS.Mobile.models.EventItemAdapter;
 import com.android.volley.Request;
@@ -44,7 +45,7 @@ public class EventsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         final Gson gson = new Gson();
-        String url ="http://192.168.137.237:8000/api/events";
+        String url = Constant.API_URL + "/events";
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);

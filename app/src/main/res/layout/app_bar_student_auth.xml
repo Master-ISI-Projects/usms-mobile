@@ -30,6 +30,6 @@
         app:borderWidth="0dp"
         android:layout_margin="@dimen/fab_margin"
         android:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/ic_student_floating_action_button" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

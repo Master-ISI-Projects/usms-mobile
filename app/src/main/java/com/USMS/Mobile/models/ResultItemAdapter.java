@@ -28,7 +28,6 @@ public class ResultItemAdapter  extends RecyclerView.Adapter<ResultItemAdapter.V
 
         public ViewHolder(@NonNull final View itemView) {
             super(itemView);
-            result_module = itemView.findViewById(R.id.result_title);
             result_attOne = itemView.findViewById(R.id.result_attOne);
             result_attTwo = itemView.findViewById(R.id.result_attTwo);
 
@@ -38,7 +37,6 @@ public class ResultItemAdapter  extends RecyclerView.Adapter<ResultItemAdapter.V
                     int a =  results.indexOf((ResultItem) v.getTag());
                     String b = a + "e";
                     Log.i("ok", b);
-                    Toast.makeText(itemView.getContext(), results.get(a).getModule(), Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -54,7 +52,6 @@ public class ResultItemAdapter  extends RecyclerView.Adapter<ResultItemAdapter.V
     public void onBindViewHolder(@NonNull ResultItemAdapter.ViewHolder Viewholder, int i) {
 
         Viewholder.itemView.setTag(results.get(i));
-        Viewholder.result_module.setText(results.get(i).getModule());
         Viewholder.result_attOne.setText(results.get(i).getAttOne());
         Viewholder.result_attTwo.setText(results.get(i).getAttTwo());
 

@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.USMS.Mobile.Helpers.Constant;
 import com.USMS.Mobile.R;
 import com.USMS.Mobile.models.EventItem;
 import com.USMS.Mobile.models.EventItemAdapter;
@@ -48,7 +49,7 @@ public class EventFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         final Gson gson = new Gson();
-        String url ="http://192.168.137.237:8000/api/events";
+        String url = Constant.API_URL + "/events";
 
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(getActivity());

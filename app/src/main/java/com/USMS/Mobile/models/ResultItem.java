@@ -1,21 +1,21 @@
 package com.USMS.Mobile.models;
 
 public class ResultItem {
-    private String module;
+    private String[] module;
     private String attOne;
     private String attTwo;
 
-    public ResultItem(String module, String attOne, String attTwo) {
+    public ResultItem(String[] module, String attOne, String attTwo) {
         this.module = module;
         this.attOne = attOne;
         this.attTwo = attTwo;
     }
 
-    public String getModule() {
+    public String[] getModule() {
         return module;
     }
 
-    public void setModule(String module) {
+    public void setModule(String[] module) {
         this.module = module;
     }
 
