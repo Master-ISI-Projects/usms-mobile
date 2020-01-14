@@ -17,7 +17,7 @@
                 android:layout_weight="1"
                 android:textSize="18dp"
                 android:textColor="@color/colorPrimary"
-                android:fontFamily="@font/oleoscriptregular"
+                android:fontFamily="@font/opensansregularnormal"
                 android:text="Accronyme" />
             <TextView
                 android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
                 android:layout_weight="1"
                 android:textSize="18dp"
                 android:textColor="@color/colorPrimary"
-                android:fontFamily="@font/oleoscriptregular"
+                android:fontFamily="@font/opensansregularnormal"
                 android:text="Intitulé" />
         </TableRow>
         <TableRow android:background="@color/whiteColor" android:padding="12dp">

@@ -20,26 +20,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="15dp"
-        android:inputType="datetime"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
-        android:fontFamily="@font/opensansregularnormal"
-        android:textSize="16dp"
-        android:hint="Code Nationale d'étudiant"
-        android:padding="10dp"
-        android:background="@drawable/edit_text_login"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="15dp"
         android:fontFamily="@font/opensansregularnormal"
         android:textSize="16dp"
         android:hint="Apogée"
+        android:inputType="datetime"
+        android:id="@+id/eTApoge_login"
         android:padding="10dp"
         android:background="@drawable/edit_text_login"
         />

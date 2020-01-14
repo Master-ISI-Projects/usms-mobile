@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.USMS.Mobile">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Student_Accronyme_Activity"></activity>
+        <activity android:name=".EventsDetailsActivity"></activity>
+        <activity android:name=".NewsDetailsActivity" />
+        <activity android:name=".Student_Accronyme_Activity" />
         <activity android:name=".Student_table_Activity" />
         <activity android:name=".Student_notification_Activity" />
         <activity android:name=".Student_result_Activity" />

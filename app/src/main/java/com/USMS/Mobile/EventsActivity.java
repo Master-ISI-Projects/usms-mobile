@@ -5,10 +5,21 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
+import com.USMS.Mobile.Helpers.Constant;
 import com.USMS.Mobile.models.EventItem;
 import com.USMS.Mobile.models.EventItemAdapter;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class EventsActivity extends AppCompatActivity {
@@ -33,20 +44,40 @@ public class EventsActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        itemList = new ArrayList<EventItem>();
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
-        itemList.add(new EventItem("Yassine", "19/21/1111"));
+        final Gson gson = new Gson();
+        String url = Constant.API_URL + "/events";
 
-        myAdapter = new EventItemAdapter(this, itemList);
-        recyclerView.setAdapter(myAdapter);
+        // Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+        // Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
+                        String r = response.toString();
+                        Log.d("-----test------", r);
+                        Type listOfMyClassObject = new TypeToken<ArrayList<EventItem>>() {}.getType();
+                        ArrayList<EventItem> eventItems = gson.fromJson(response, listOfMyClassObject);
+                        Log.d("test", "start -----------------------");
+                        itemList = new ArrayList<EventItem>();
+                        for(EventItem eventItem: eventItems) {
+                            itemList.add(eventItem);
+                        }
+                        myAdapter = new EventItemAdapter(EventsActivity.this, itemList);
+                        recyclerView.setAdapter(myAdapter);
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("ok", error.toString());
+            }
+        });
+        // Add the request to the RequestQueue.
+        queue.add(stringRequest);
+
+
     }
     @Override
     public boolean onSupportNavigateUp(){

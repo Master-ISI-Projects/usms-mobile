@@ -2,6 +2,8 @@ package com.USMS.Mobile.models;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.USMS.Mobile.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -42,9 +45,15 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
                 @Override
                 public void onClick(View v) {
                   int a =  news.indexOf((NewsItem) v.getTag());
-                  String b = a + "e";
-                    Log.i("ok", b);
-                    Toast.makeText(itemView.getContext(), news.get(a).getName(), Toast.LENGTH_SHORT).show();
+                  Intent intent = new Intent(itemView.getContext(), com.USMS.Mobile.NewsDetailsActivity.class);
+                  intent.putExtra("title", news.get(a).getTitle());
+                  intent.putExtra("image", news.get(a).getImage());
+                  intent.putExtra("description", news.get(a).getDescription());
+                  intent.putExtra("published_at", news.get(a).getPublished_at());
+                  intent.putExtra("scholar_year_id", news.get(a).getScholar_year_id());
+                  intent.putExtra("createdAt", news.get(a).getCreatedAt());
+                  itemView.getContext().startActivity(intent);
+
                 }
             });
         }
@@ -61,9 +70,10 @@ public class NewsItemAdapter extends RecyclerView.Adapter<NewsItemAdapter.ViewHo
     public void onBindViewHolder(@NonNull NewsItemAdapter.ViewHolder Viewholder, int i) {
 
         Viewholder.itemView.setTag(news.get(i));
-        Viewholder.news_name.setText(news.get(i).getName());
-        Viewholder.news_date.setText(news.get(i).getDate());
-        Viewholder.news_image.setImageResource(R.drawable.news_item);
+        Viewholder.news_name.setText(news.get(i).getTitle());
+        Viewholder.news_date.setText(news.get(i).getPublished_at());
+        Picasso.get().load(news.get(i).getImage()).into(Viewholder.news_image);
+
 
     }
 

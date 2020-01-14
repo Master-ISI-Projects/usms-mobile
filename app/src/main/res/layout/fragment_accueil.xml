@@ -5,255 +5,210 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@drawable/background_lines">
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <GridLayout
+        android:layout_gravity="center"
+        android:background="@drawable/background_lines"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:rowCount="3"
-            android:columnCount="2"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false">
-
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/whiteColor"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
                 android:id="@+id/HomeToNews"
-                android:elevation="6dp"
-                android:layout_margin="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                >
 
+                >
                 <LinearLayout
+                    android:id="@+id/rlimg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_gravity="center"
-                    android:padding="16dp"
+                    android:padding="20dp"
+                    android:orientation="vertical"
                     >
-
                     <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/news_icon_home_grid"
-                        />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/news_icon_home_grid" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/menu_news"
-                        android:textSize="18sp"
-                        android:layout_marginTop="12dp"
-
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
                         />
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/whiteColor"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
                 android:id="@+id/HomeToAbout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:elevation="6dp"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                android:layout_gravity="center"
-                android:gravity="center"
                 >
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:orientation="vertical"
                     >
-
                     <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/university_icon_home_grid"
-                        />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/university_icon_home_grid" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/menu_university_infos"
-                        android:textSize="14sp"
-                        android:layout_marginTop="12dp"
-
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
                         />
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/HomeToEvents"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:elevation="6dp"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/event_icon_home_grid"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Evénements"
-                        android:textSize="15sp"
-                        android:layout_marginTop="12dp"
-
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:elevation="6dp"
-                android:layout_margin="12dp"
-                android:id="@+id/HomeToPw"
-                app:cardCornerRadius="12dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/pw_icon_home_grid"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/menu_Presedent_word"
-                        android:textSize="12sp"
-                        android:layout_marginTop="12dp"
-
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:elevation="6dp"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                android:id="@+id/HomeToWeb"
-                android:layout_gravity="center"
-                android:gravity="center"
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/web_icon_home_grid"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/fpbm_web"
-                        android:textSize="18sp"
-                        android:layout_marginTop="12dp"
-
-                        />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:elevation="6dp"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/whiteColor"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
                 android:id="@+id/HomeToFacebook"
-                android:layout_gravity="center"
-                android:gravity="center"
-                >
 
+                >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="center"
-                    android:padding="16dp"
+                    android:padding="20dp"
+                    android:orientation="vertical"
                     >
-
                     <ImageView
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:src="@drawable/facebook_icon_home_grid"
-                        />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/facebook_icon_home_grid" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/fpbm_face"
-                        android:textSize="13sp"
-                        android:layout_marginTop="12dp"
-
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
                         />
-
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/whiteColor"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/HomeToEvents"
 
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/event_icon_home_grid" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evénements"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/whiteColor"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/HomeToPw"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical"
 
-        </GridLayout>
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/pw_icon_home_grid" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_Presedent_word"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/whiteColor"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/HomeToWeb"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/web_icon_home_grid" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fpbm_web"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
     </LinearLayout>
-
-
 </ScrollView>
