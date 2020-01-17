@@ -6,7 +6,7 @@ to implement the maximum in a shot time enough talking if you're interested in t
 ***Note :***	Please remember that you need to setup mobile side and web side to test the app, You can click on Master-ISI-Projects above then
 choose usms-web for web side, I recommend you to setup web side first.
 
-To setup the app you can follow tose steps :
+To setup the app you can follow those steps :
 
  - Download the project or clone it using : `git clone https://github.com/Master-ISI-Projects/usms-mobile.git`
  - Edit the variable inside Constant.java with your IP adress you find the file in this path inside : `app/src/main/java/com/USMS/Mobile/Helpers/Constant.java`
