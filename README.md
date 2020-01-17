@@ -21,6 +21,6 @@ using your physical phone both computer & phone must use same wifi etc.
     margin-right: 10px;" width="390" 
     src="https://github.com/Master-ISI-Projects/usms-mobile/blob/master/screenshots/Normal_visitor_%20home.jpg" />
 <img height="1000" width="390" 
-src="https://github.com/Master-ISI-Projects/usms-mobile/blob/master/screenshots/Normal_visitor_news.jpg" />
+src="https://github.com/Master-ISI-Projects/usms-mobile/blob/master/screenshots/Student_marks.jpg" />
 
 ***More :*** For more images check this folder inside the repo: [ScreenShots](https://github.com/Master-ISI-Projects/usms-mobile/tree/master/screenshots)
